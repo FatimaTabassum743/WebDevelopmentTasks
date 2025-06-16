@@ -1,3 +1,140 @@
-p{
-    background-color: yellow;
+/* Reset + Universal Selector */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+/* ID Selector */
+#main-heading {
+  background: #ffd700;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Class Selector */
+.intro {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+/* Grouping */
+h1, h2, h3, p {
+  color: #333;
+}
+
+/* Search Section */
+.search-section {
+  text-align: center;
+  margin: 20px;
+}
+
+/* Placeholder and Focus */
+.form-input {
+  padding: 10px;
+  width: 90%;
+  margin: 10px auto;
+  display: block;
+  border: 1px solid #ccc;
+}
+.form-input::placeholder {
+  color: #ffd700;
+  font-style: italic;
+}
+.form-input:focus {
+  border: 2px solid blue;
+  outline: none;
+}
+
+/* Profile Card */
+.card {
+  width: 360px;
+  margin: auto;
+  padding: 20px;
+  border: 5px solid #000;
+  background: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.profile-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  display: block;
+  margin: auto;
+}
+
+/* Skills */
+.skills-list {
+  margin: 10px 0;
+}
+.skills-list li {
+  margin-left: 20px;
+}
+.skills-list li:nth-child(2n) {
+  color: red;
+}
+
+/* Links */
+a[href^="https"] {
+  color: green;
+}
+
+/* Toggle Bio using :checked */
+.bio {
+  display: none;
+}
+#toggle-bio:checked{
+  outline: 2px solid blue;
+}
+
+/* Button Panel */
+.button-panel {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+.hover-btn:hover {
+  background-color: lightgreen;
+}
+.active-btn:active {
+  background-color: red;
+}
+.disabled-btn:disabled {
+  background-color: violet;
+  color: white;
+}
+
+/* Contact Form */
+.contact-form {
+  margin: 40px auto;
+  width: 90%;
+  max-width: 400px;
+  padding: 15px;
+  background: #f3f3f3;
+  border-radius: 8px;
+}
+.contact-form .submit-btn {
+  margin-top: 10px;
+  padding: 10px;
+  background: purple;
+  color: white;
+  border: none;
+  width: 100%;
+}
+.submit-btn:hover {
+  background: darkviolet;
+}
+
+/* Box Model Demo */
+.box-demo {
+  width: 300px;
+  margin: 40px auto;
+  padding: 30px;
+  border: 10px solid blue;
+  background: #eaeaea;
+  color: black;
+  text-align: center;
 }

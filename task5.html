@@ -1,44 +1,63 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Student Profile Card</title>
-  <style>
-    .card {
-      background: #f0f8ff;
-      padding: 20px;
-      margin: 50px auto;
-      border: 2px solid #4a90e2;
-      width: 300px;
-      text-align: center;
-      font-family: Arial, sans-serif;
-    }
-
-    .profile-img {
-      width: 100px;
-      height: 100px;
-      border: 3px solid #4a90e2;
-      border-radius: 50%;
-      margin-bottom: 15px;
-    }
-
-    .name {
-      font-size: 24px;
-      color: #333;
-      margin-bottom: 5px;
-    }
-
-    .desc {
-      font-size: 14px;
-      color: #666;
-    }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Task 5</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <div class="card">
-    <img src="images/developer.png" alt="Profile Picture" class="profile-img">
-    <div class="name">Fatima Tabassum</div>
-    <div class="desc">MERN Stack Developer | AI ML Developer</div>
+  <h1 id="main-heading">Hi Welcome to My Profile</h1>
+
+  <!-- Search Bar -->
+  <div class="search-section">
+    <input type="search" class="form-input" placeholder="Search my skills..." />
+  </div>
+
+  <!-- Profile Card -->
+  <div class="card" id="profile-card">
+    <img src="images/developer.png" class="profile-img" alt="Profile Image" />
+    <h2 class="name">Fatima Tabassum</h2>
+    <p class="intro">MERN Stack Developer | AI Engineer</p>
+
+    <!-- Skills -->
+    <h3>My Skills</h3>
+    <ul class="skills-list">
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+      <li>React</li>
+    </ul>
+
+    <!-- Website + Email -->
+    <p>Email: <a href="mailto:test@example.com">test@example.com</a></p>
+    <p>Website: <a href="https://example.com">https://example.com</a></p>
+
+    <!-- Toggle More Info -->
+    <label><input type="checkbox" id="toggle-bio" /> Show Bio</label>
+    <p class="bio">I love building web apps that solve real problems. I explore AI agents and automation daily.</p>
+
+    <!-- Buttons -->
+    <div class="button-panel">
+      <button class="hover-btn">Hover me</button>
+      <button class="active-btn">Click me</button>
+      <button class="disabled-btn" disabled>Disabled</button>
+    </div>
+  </div>
+
+  <!-- Contact Form -->
+  <div class="contact-form">
+    <h3>Contact Me</h3>
+    <input type="text" placeholder="Your Name" class="form-input" />
+    <input type="email" placeholder="Your Email" class="form-input" />
+    <textarea placeholder="Your Message" class="form-input"></textarea>
+    <button class="submit-btn">Send</button>
+  </div>
+
+  <!-- Box Model Demo -->
+  <div class="box-demo">
+    <p>Box Model Demo Area</p>
   </div>
 
 </body>
