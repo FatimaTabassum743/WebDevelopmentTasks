@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>CSS Grid & Position Demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      background: #f0f0f0;
+    }
+
+    /* ✅ 1. Grid Container with fixed width columns */
+    .grid-fixed {
+      display: grid;
+      grid-template-columns: 100px 100px 100px;
+      gap: 10px;
+      background: #fff;
+      padding: 10px;
+      margin: 20px;
+    }
+
+    /* ✅ 2. Grid with fr unit */
+    .grid-fr {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      gap: 10px;
+      background: #fff;
+      padding: 10px;
+      margin: 20px;
+    }
+
+    /* ✅ 3. Grid with rows */
+    .grid-rows {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 100px 100px;
+      gap: 10px;
+      background: #fff;
+      padding: 10px;
+      margin: 20px;
+    }
+
+    /* ✅ 4. Gaps */
+    .grid-gaps {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      row-gap: 20px;
+      column-gap: 40px;
+      background: #fff;
+      padding: 10px;
+      margin: 20px;
+    }
+
+    /* ✅ 5. Repeat columns */
+    .grid-repeat {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+      background: #fff;
+      padding: 10px;
+      margin: 20px;
+    }
+
+    /* ✅ 6 & 7. Grid item positioning */
+    .grid-span {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      background: #fff;
+      padding: 10px;
+      margin: 20px;
+    }
+
+    .box {
+      background: #2196f3;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      border-radius: 4px;
+    }
+
+    .box1 {
+      grid-column: span 2;
+    }
+
+    .box4 {
+      grid-row: span 2;
+    }
+
+    /* ✅ Position Examples */
+    .position-demo {
+      margin: 40px;
+      padding: 10px;
+      background: #fff;
+    }
+
+    .static-box {
+      position: static;
+      background: lightgray;
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+
+    .relative-box {
+      position: relative;
+      top: 20px;
+      left: 30px;
+      background: lightblue;
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+
+    .parent {
+      position: relative;
+      width: 200px;
+      height: 200px;
+      background: #ddd;
+      margin-bottom: 10px;
+    }
+
+    .absolute-child {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background: coral;
+      padding: 10px;
+      color: white;
+    }
+
+    .fixed-box {
+      position: fixed;
+      top: 10px;
+      right: 10px;
+      background: green;
+      color: white;
+      padding: 10px;
+      border-radius: 5px;
+      z-index: 1000;
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="fixed-box">Fixed (Always visible)</div>
+
+  <h2 style="text-align: center;">✅ CSS Grid Examples</h2>
+
+  <!-- 1. Fixed width columns -->
+  <div class="grid-fixed">
+    <div class="box">1</div>
+    <div class="box">2</div>
+    <div class="box">3</div>
+  </div>
+
+  <!-- 2. fr unit -->
+  <div class="grid-fr">
+    <div class="box">1fr</div>
+    <div class="box">2fr</div>
+  </div>
+
+  <!-- 3. Grid rows -->
+  <div class="grid-rows">
+    <div class="box">1</div>
+    <div class="box">2</div>
+    <div class="box">3</div>
+    <div class="box">4</div>
+  </div>
+
+  <!-- 4. Gaps -->
+  <div class="grid-gaps">
+    <div class="box">A</div>
+    <div class="box">B</div>
+    <div class="box">C</div>
+    <div class="box">D</div>
+  </div>
+
+  <!-- 5. Repeat columns -->
+  <div class="grid-repeat">
+    <div class="box">1</div>
+    <div class="box">2</div>
+    <div class="box">3</div>
+    <div class="box">4</div>
+  </div>
+
+  <!-- 6 & 7. Spanning rows and columns -->
+  <div class="grid-span">
+    <div class="box box1">1 (Span 2 columns)</div>
+    <div class="box">2</div>
+    <div class="box box4">3 (Span 2 rows)</div>
+    <div class="box">4</div>
+    <div class="box">5</div>
+  </div>
+
+  <h2 style="text-align: center;">✅ CSS Position Examples</h2>
+
+  <div class="position-demo">
+    <!-- Static -->
+    <div class="static-box">Static Position</div>
+
+    <!-- Relative -->
+    <div class="relative-box">Relative (top: 20px, left: 30px)</div>
+
+    <!-- Absolute -->
+    <div class="parent">
+      <div class="absolute-child">Absolute inside relative</div>
+    </div>
+  </div>
+
+</body>
+</html>

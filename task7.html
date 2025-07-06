@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CSS Properties Demo - Beginner Level</title>
+  <link rel="stylesheet" href="task7.css" />
+</head>
+<body>
+  <!-- Navigation with Flexbox -->
+  <nav class="navbar">
+    <div class="nav-brand">CSS Demo</div>
+    <ul class="nav-menu">
+      <li><a href="#cards">Cards</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#animations">Animations</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section with Grid -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1 class="hero-title">CSS Properties Demo</h1>
+      <p class="hero-subtitle">Learn Flexbox, Grid, Position, and more!</p>
+      <button class="cta-button">Get Started</button>
+    </div>
+  </section>
+
+  <!-- Profile Cards Section -->
+  <section id="cards" class="cards-section">
+    <h2 class="section-title">Team Members (Grid Layout)</h2>
+    <div class="grid-container">
+      <div class="card">
+        <div class="card-image">
+          <img src="/images/developer.png" alt="User" />
+          <div class="card-overlay">
+            <span class="overlay-text">View Profile</span>
+          </div>
+        </div>
+        <h3>Fatima</h3>
+        <p class="role">Front-End Developer</p>
+        <div class="card-details">
+          <p>Loves CSS and creating beautiful UI components.</p>
+          <div class="skills">
+            <span class="skill-tag">HTML</span>
+            <span class="skill-tag">CSS</span>
+            <span class="skill-tag">JavaScript</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="card">
+        <div class="card-image">
+          <img src="/images/developer.png" alt="User" />
+          <div class="card-overlay">
+            <span class="overlay-text">View Profile</span>
+          </div>
+        </div>
+        <h3>Ali</h3>
+        <p class="role">Back-End Developer</p>
+        <div class="card-details">
+          <p>Enjoys working with Node.js and databases.</p>
+          <div class="skills">
+            <span class="skill-tag">Node.js</span>
+            <span class="skill-tag">MongoDB</span>
+            <span class="skill-tag">Express</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="card">
+        <div class="card-image">
+          <img src="/images/developer.png" alt="User" />
+          <div class="card-overlay">
+            <span class="overlay-text">View Profile</span>
+          </div>
+        </div>
+        <h3>Sarah</h3>
+        <p class="role">UI/UX Designer</p>
+        <div class="card-details">
+          <p>Passionate about user experience and design systems.</p>
+          <div class="skills">
+            <span class="skill-tag">Figma</span>
+            <span class="skill-tag">Adobe XD</span>
+            <span class="skill-tag">Sketch</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Section with Flexbox -->
+  <section id="gallery" class="gallery-section">
+    <h2 class="section-title">Photo Gallery (Flexbox Layout)</h2>
+    <div class="flex-gallery">
+      <div class="gallery-item">
+        <img src="/images/developer.png" alt="Gallery Image 1" />
+        <div class="gallery-caption">Beautiful Landscape</div>
+      </div>
+      <div class="gallery-item">
+        <img src="/images/developer.png" alt="Gallery Image 2" />
+        <div class="gallery-caption">City Skyline</div>
+      </div>
+      <div class="gallery-item">
+        <img src="/images/developer.png" alt="Gallery Image 3" />
+        <div class="gallery-caption">Mountain View</div>
+      </div>
+      <div class="gallery-item">
+        <img src="/images/developer.png" alt="Gallery Image 4" />
+        <div class="gallery-caption">Ocean Waves</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Animations Section -->
+  <section id="animations" class="animations-section">
+    <h2 class="section-title">Real-World CSS Animations</h2>
+    
+    <!-- Bouncing Ball Animation -->
+    <div class="animation-demo">
+      <h3>Bouncing Ball</h3>
+      <div class="ball-container">
+        <div class="ball"></div>
+        <div class="shadow"></div>
+      </div>
+    </div>
+
+    <!-- Moving Car Animation -->
+    <div class="animation-demo">
+      <h3>Moving Car</h3>
+      <div class="road">
+        <div class="car">
+          <div class="car-body">
+            <div class="car-top"></div>
+            <div class="car-window"></div>
+          </div>
+          <div class="wheel wheel-front"></div>
+          <div class="wheel wheel-back"></div>
+        </div>
+        <div class="road-lines"></div>
+      </div>
+    </div>
+
+    <!-- Floating Elements -->
+    <div class="animation-demo">
+      <h3>Floating Elements</h3>
+      <div class="floating-container">
+        <div class="floating-icon">🚀</div>
+        <div class="floating-icon">⭐</div>
+        <div class="floating-icon">💡</div>
+        <div class="floating-icon">🎯</div>
+      </div>
+    </div>
+
+    <!-- Moving Image Animation -->
+    <div class="animation-demo">
+      <h3>Moving Image with Color & Shape Changes</h3>
+      <div class="moving-image-container">
+        <img src="/images/developer.png" alt="Moving Developer" class="moving-image" />
+      </div>
+    </div>
+
+    <!-- Loading Spinner -->
+    <div class="animation-demo">
+      <h3>Loading Spinner</h3>
+      <div class="spinner-container">
+        <div class="spinner"></div>
+        <p>Loading...</p>
+      </div>
+    </div>
+
+    <!-- Pulse Heart -->
+    <div class="animation-demo">
+      <h3>Pulse Heart</h3>
+      <div class="heart-container">
+        <div class="heart">❤️</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Position Demo Section -->
+  <section class="position-demo">
+    <h2 class="section-title">Position Properties Demo</h2>
+    <div class="position-container">
+      <div class="position-box relative">Relative</div>
+      <div class="position-box absolute">Absolute</div>
+    </div>
+  </section>
+
+  <!-- Floating Action Button -->
+  <div class="fab">
+    <span>+</span>
+  </div>
+
+  <!-- Modal (Hidden by default) -->
+  <div class="modal" id="modal">
+    <div class="modal-content">
+      <span class="close-btn">&times;</span>
+      <h3>Modal Title</h3>
+      <p>This is a modal that demonstrates visibility and display properties.</p>
+    </div>
+  </div>
+</body>
+</html>
